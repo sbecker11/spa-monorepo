@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while true; do
+  pid=$(lsof -i :3000 -t | head -n 1)
+  if [ -z "$pid" ]; then
+    echo "no more pids to kill"
+    break
+  else
+    echo "killing pid:$pid"
+    kill -9 $pid
+    sleep 2
+  fi
+done
+
