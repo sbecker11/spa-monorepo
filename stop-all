@@ -1,0 +1,5 @@
+cd /Users/sbecker11/workspace-spa/spa-monorepo/frontend
+stop-frontend
+sleep 2
+cd /Users/sbecker11/workspace-spa/spa-monorepo/backend
+stop-backend
