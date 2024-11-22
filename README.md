@@ -20,6 +20,7 @@ npm install
 npm start
 
 3. To stop the front end
+
 cd project dir
 npm run stop
 
